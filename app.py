@@ -26,7 +26,7 @@ def users():
         new_user = User(name=data['name'])
         db.session.add(new_user)
         db.session.commit()
-        return jsonify({'message': 'User added successfully'})
+        return jsonify({'message': 'User added successfully !'})
 
 if __name__ == '__main__':
     app.run(debug=True)
